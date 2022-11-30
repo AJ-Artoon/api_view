@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewOne = () => {
   return (
-    <div>new</div>
+    <div>new to undo here </div>
   )
 }
 
