@@ -1,11 +1,12 @@
-import { Input } from 'antd'
-import styles from '../styles/Home.module.css'
+import TableCustom from "../components/table";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div> 
-      </div>
+      <main className={styles.main}>
+        <TableCustom /> 
+      </main>
     </div>
-  )
+  );
 }
