@@ -1,4 +1,4 @@
-import { InputCustom,  TableCustom } from "../components/index";
+import { InputCustom,  TableCustom } from "../components";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
