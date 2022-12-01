@@ -1,11 +1,34 @@
-import { InputCustom,  TableCustom } from "../components/index";
+import { Button, Col, Row } from "antd";
+import { useState } from "react";
+import { InputCustom, TableCustom } from "../components/index";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [val, setValue] = useState('')
+  const handleapi = (e) => {
+    const { value, name } = e.target;
+    setValue(value)
+  };
+  const handlesubmit = (e) => {
+    console.log(val)
+  };
   return (
     <div className={styles.container}>
-      <InputCustom placeholder="api here" />
-        <TableCustom />  
+      <Row>
+        <Col span={16}>
+          <InputCustom placeholder="api here" defaultValue={val} onChange={handleapi} />
+        </Col>
+        <Col span={8} className="center-t">
+          <Button type="primary" danger onClick={handlesubmit}>
+            get data
+          </Button>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={24} className="mt-10">
+          <TableCustom />
+        </Col>
+      </Row>
     </div>
   );
 }
