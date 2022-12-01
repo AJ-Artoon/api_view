@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Button, Col, Row } from "antd";
 import { InputCustom, TableCustom } from "../components";
 import styles from "../styles/Home.module.css";
+import { apicall } from "../constant/apicall";
+import axios from "axios";
 
 export default function Home() {
   const [val, setValue] = useState('')
@@ -10,7 +12,9 @@ export default function Home() {
     setValue(value)
   };
   const handlesubmit = (e) => {
-    console.log(val)
+    axios.get(val).then((response)=>{
+    console.log(response.data)
+})
   };
   return (
     <div className={styles.container}>
