@@ -1,6 +1,6 @@
-import { Button, Col, Row } from "antd";
 import { useState } from "react";
-import { InputCustom, TableCustom } from "../components/index";
+import { Button, Col, Row } from "antd";
+import { InputCustom, TableCustom } from "../components";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {

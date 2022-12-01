@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import styles from '../styles/Header.module.css'
+import styles from '../../styles/Navbar.module.css'
 
-const Header = () => {
+const Navbar = () => {
     return (
         <div className={styles.main} >
             <div className={styles.link}>
@@ -12,4 +12,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Navbar
